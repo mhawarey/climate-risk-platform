@@ -1,0 +1,74 @@
+# Default configuration for Climate Risk Integration Platform
+
+# Data sources configuration
+data_sources:
+  climate:
+    nasa_power:
+      enabled: true
+      api_key: null  # Will be read from environment variable if available
+    noaa_cdo:
+      enabled: true
+      api_key: null
+    copernicus:
+      enabled: false  # Disabled by default as it requires authentication
+      api_key: null
+  
+  financial:
+    yahoo_finance:
+      enabled: true
+    alpha_vantage:
+      enabled: false
+      api_key: null
+    fred:
+      enabled: true
+      api_key: null
+  
+  energy:
+    eia:
+      enabled: true
+      api_key: null
+    global_energy_monitor:
+      enabled: false
+
+# UI preferences
+ui:
+  theme: system  # Options: light, dark, system
+  default_view: dashboard
+  map_provider: open_street_map
+
+# Risk engine parameters
+risk_engine:
+  default_scenarios:
+    - ipcc_ssp245
+    - ipcc_ssp370
+    - ipcc_ssp585
+  monte_carlo_iterations: 1000
+  confidence_interval: 0.95
+
+# AI/ML parameters
+ai:
+  scenario_generator:
+    use_gpu: false
+    max_iterations: 500
+  risk_explainer:
+    detail_level: medium  # Options: low, medium, high
+
+# Quantum optimizer parameters
+quantum_optimizer:
+  annealing_steps: 1000
+  temperature_decay: 0.95
+  initial_temperature: 1.0
+  convergence_threshold: 0.000001
+  max_iterations: 500
+
+# Caching parameters
+cache:
+  enabled: true
+  max_age_hours: 24
+  location: ~/.cache/climate_risk
+
+# Logging parameters
+logging:
+  level: info  # Options: debug, info, warning, error, critical
+  file_enabled: true
+  file_location: ~/.logs/climate_risk
