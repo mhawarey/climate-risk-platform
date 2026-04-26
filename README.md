@@ -1,5 +1,7 @@
 # Climate Risk Integration Platform
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A comprehensive climate risk assessment platform for the oil and gas sector, integrating physical and transition risks with financial institution exposure analysis. Features quantum-inspired optimization and explainable AI.
 
 ## Screenshots
