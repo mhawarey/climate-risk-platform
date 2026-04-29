@@ -78,6 +78,7 @@ Key dependencies: PyQt5, TensorFlow, PennyLane, SHAP, GeoPandas, Folium, Plotly,
 ## Author
 
 **Dr. Mosab Hawarey**
+>
 PhD, Geodetic & Photogrammetric Engineering (ITU) | MSc, Geomatics (Purdue) | MBA (Wales) | BSc, MSc (METU)
 
 - GitHub: https://github.com/mhawarey
